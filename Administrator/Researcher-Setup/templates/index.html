@@ -140,7 +140,8 @@
         <span class=nt>container</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>containerPort</span><span class="p p-Indicator">}</span>
         <span class=nt>external</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>hostPort</span><span class="p p-Indicator">}</span>
         <span class=nt>autoGenerate</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>        
-</code></pre></div> <p>Description: </p> <ul> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter. </li> </ul> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>ports</span><span class=p>:</span>
+</code></pre></div> <p>Description: </p> <ul> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter. </li> </ul> <div class="admonition note"> <p class=admonition-title>Note</p> <p>Ports will not be set without the settings the <code>serviceType</code>s flag as well. </p> </div> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>serviceType</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">nodeport</span>
+<span class=nt>ports</span><span class=p>:</span>
   <span class=nt>port1</span><span class=p>:</span>
     <span class=nt>container</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">8443</span>
     <span class=nt>external</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">443</span>
