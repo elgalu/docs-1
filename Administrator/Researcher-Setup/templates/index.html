@@ -23,36 +23,36 @@
 </code></pre></div> <p>Now open the Researcher user interface, find the <em>Requested GPU</em> box. Verify that the default is set to 1, that it is possible to edit the value to any number between 1 and 4 at 0.2 increments. </p> <h2 id=template-parameters>Template parameters<a class=headerlink href=#template-parameters title="Permanent link">&para;</a></h2> <p>Administrative template can be used to configure all Run:AI Job submittion parameters. You can find the full list of parameters under the Command-line documentation of <a href=../../../Researcher/cli-reference/runai-submit/ >runai submit</a> and <a href=../../../Researcher/cli-reference/runai-submit-mpi/ >runai submit-mpi</a>.</p> <h2 id=syntax>Syntax<a class=headerlink href=#syntax title="Permanent link">&para;</a></h2> <p>Template parameters are written in <em>Camel Case</em> notation. For example, the Command-line flag <code>--host-network</code> is written as <code>hostNetwork</code>. For a full list of parameters and their correct spelling, type, and syntax, see the <a href=../../../developer/researcher-rest-api/rest-submit/ >Run:AI Submit REST API</a>. </p> <p>The following section describe the syntax of the various parameter types.</p> <h3 id=boolean>Boolean<a class=headerlink href=#boolean title="Permanent link">&para;</a></h3> <p>A Boolean parameter accepts two values: <code>true</code> and <code>false</code>. The syntax is: </p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>parameter name</span><span class="p p-Indicator">}:</span>
   <span class=nt>required</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>      
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job. XXX is there a default? </li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. XXXX the default is editable. Right?</li> </ul> <p>Example: Mandate the disabling of host network: </p> <div class=highlight><pre><span></span><code><span class=nt>hostNetwork</span><span class=p>:</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>      
+</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job. Default is false. </li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. Default is true</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> </ul> <p>Example: Mandate the disabling of host network: </p> <div class=highlight><pre><span></span><code><span class=nt>hostNetwork</span><span class=p>:</span>
   <span class=nt>required</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div> <h3 id=integer>Integer<a class=headerlink href=#integer title="Permanent link">&para;</a></h3> <p>An Integer parameter accepts whole numbers. The syntax is: </p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>name</span><span class="p p-Indicator">}:</span> 
   <span class=nt>required</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>integer</span><span class="p p-Indicator">}</span>      
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>integer</span><span class="p p-Indicator">}</span>      
   <span class=nt>min</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>integer</span><span class="p p-Indicator">}</span>
   <span class=nt>max</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>integer</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job.</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</li> <li><code>min/max</code>: if provided,mandate a range for this parameter.</li> </ul> <p>Example: Set a limit to hyper-parameter optimization parallelism:</p> <div class=highlight><pre><span></span><code><span class=nt>parallelism</span><span class=p>:</span>
+</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job. Default is false. </li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. Default is true</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>min/max</code>: if provided,mandate a range for this parameter.</li> </ul> <p>Example: Set a limit to hyper-parameter optimization parallelism:</p> <div class=highlight><pre><span></span><code><span class=nt>parallelism</span><span class=p>:</span>
   <span class=nt>required</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
   <span class=nt>min</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
   <span class=nt>max</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">50</span>
 </code></pre></div> <h3 id=number>Number<a class=headerlink href=#number title="Permanent link">&para;</a></h3> <p>A Number (or "Double") parameter accepts any number including non-integer numbers. The syntax is: </p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>name</span><span class="p p-Indicator">}:</span> 
   <span class=nt>required</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>float</span><span class="p p-Indicator">}</span>      
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>float</span><span class="p p-Indicator">}</span>      
   <span class=nt>min</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>float</span><span class="p p-Indicator">}</span>
   <span class=nt>max</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>float</span><span class="p p-Indicator">}</span>
   <span class=nt>step</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>float</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job.</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</li> <li><code>min/max</code>: if provided,mandate a range for this parameter.</li> <li><code>step</code>: mandates the values to fall within fixed steps between the minimum and maximum values. For example, the configuration min=1, max=2, steps=0.2 will yield valid values of 1.0, 1.2, 1.4, 1.6, 1.8, 2.0</li> </ul> <p>Example: Set a limit to the number of GPUs being requested:</p> <div class=highlight><pre><span></span><code><span class=nt>gpu</span><span class=p>:</span>
+</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job. Default is false. </li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. Default is true</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>min/max</code>: if provided,mandate a range for this parameter.</li> <li><code>step</code>: mandates the values to fall within fixed steps between the minimum and maximum values. For example, the configuration min=1, max=2, steps=0.2 will yield valid values of 1.0, 1.2, 1.4, 1.6, 1.8, 2.0</li> </ul> <p>Example: Set a limit to the number of GPUs being requested:</p> <div class=highlight><pre><span></span><code><span class=nt>gpu</span><span class=p>:</span>
   <span class=nt>required</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class=nt>default</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
   <span class=nt>min</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
@@ -61,17 +61,17 @@
 </code></pre></div> <h3 id=string>String<a class=headerlink href=#string title="Permanent link">&para;</a></h3> <p>A String parameter accepts any text. The syntax is: </p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>name</span><span class="p p-Indicator">}:</span> 
   <span class=nt>required</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>string</span><span class="p p-Indicator">}</span>      
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>string</span><span class="p p-Indicator">}</span>      
   <span class=nt>options</span><span class=p>:</span>
     <span class="p p-Indicator">-</span> <span class="p p-Indicator">{</span><span class=nv>string1</span><span class="p p-Indicator">}</span>
     <span class="p p-Indicator">-</span> <span class="p p-Indicator">{</span><span class=nv>string2</span><span class="p p-Indicator">}</span>
     <span class="l l-Scalar l-Scalar-Plain">...</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job.</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</li> <li><code>options</code>: list of strings. The list provides the XXXX editable works?</li> </ul> <p>Example: set a closed list of possible images.</p> <div class=highlight><pre><span></span><code><span class=nt>image</span><span class=p>:</span> 
+</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job. Default is false.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. Default is true</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>options</code>: list of strings. The list is a closed list. </li> </ul> <p>Example: set a closed list of possible images.</p> <div class=highlight><pre><span></span><code><span class=nt>image</span><span class=p>:</span> 
   <span class=nt>required</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">gcr.io/run-ai-demo/quickstart</span>     
     <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+    <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">gcr.io/run-ai-demo/quickstart</span>     
   <span class=nt>options</span><span class=p>:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">gcr.io/run-ai-demo/quickstart</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">gcr.io/run-ai-demo/quickstart-distributed</span>
@@ -79,34 +79,33 @@
 </code></pre></div> <h3 id=array-of-strings>Array of Strings<a class=headerlink href=#array-of-strings title="Permanent link">&para;</a></h3> <p>Set a list of strings. The syntax is:</p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>name</span><span class="p p-Indicator">}:</span>
   <span class=nt>required</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
   <span class=nt>default</span><span class=p>:</span>
-    <span class=nt>value</span><span class=p>:</span> 
-      <span class="p p-Indicator">{</span><span class=nv>string1</span><span class="p p-Indicator">}</span><span class=err>,</span>
-      <span class="p p-Indicator">{</span><span class=nv>string2</span><span class="p p-Indicator">}</span><span class=err>,</span>
-      <span class="l l-Scalar l-Scalar-Plain">...</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job.</li> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</li> <li><code>options</code>: list of strings. All strings are part of the default value</li> </ul> <p>Example: arguments to a command</p> <div class=highlight><pre><span></span><code><span class=nt>arguments</span><span class=p>:</span>
-  <span class=nt>required</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-  <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span> 
-      <span class=s>&#39;-X&#39;</span><span class=err>,</span>
-      <span class=s>&#39;-b</span><span class=nv> </span><span class=s>20&#39;</span><span class=err>,</span>
+      <span class="p p-Indicator">{</span><span class=nv>id1</span><span class="p p-Indicator">}</span> <span class="p p-Indicator">:</span> <span class="p p-Indicator">{</span><span class=nv>string1</span><span class="p p-Indicator">}</span><span class=err>,</span>
+      <span class="p p-Indicator">{</span><span class=nv>id2</span><span class="p p-Indicator">}</span> <span class="p p-Indicator">:</span> <span class="p p-Indicator">{</span><span class=nv>string2</span><span class="p p-Indicator">}</span><span class=err>,</span>
       <span class="l l-Scalar l-Scalar-Plain">...</span>
+</code></pre></div> <p>Description:</p> <ul> <li><code>default.value</code>: if provided, serves as the default value for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>options</code>: list of strings. All strings are part of the default value</li> <li><code>id1</code>, <code>id2</code> etc are <em>unique</em> arbitrary strings. </li> </ul> <p>Example: arguments to a command</p> <div class=highlight><pre><span></span><code><span class=nt>arguments</span><span class=p>:</span>
+  <span class=nt>default</span><span class=p>:</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class=nt>value</span><span class=p>:</span> 
+      <span class=s>&#39;param1&#39;</span> <span class="p p-Indicator">:</span> <span class=s>&#39;-X&#39;</span><span class=err>,</span>
+      <span class=s>&#39;param2&#39;</span> <span class="p p-Indicator">:</span> <span class=s>&#39;-b</span><span class=nv> </span><span class=s>20&#39;</span><span class=err>,</span>
+      <span class="l l-Scalar l-Scalar-Plain">...</span>
 </code></pre></div> <h3 id=string-to-string-mapping>String to String Mapping<a class=headerlink href=#string-to-string-mapping title="Permanent link">&para;</a></h3> <p>A set of mapping of string to a string. The syntax is: </p> <div class=highlight><pre><span></span><code><span class="p p-Indicator">{</span><span class=nv>name</span><span class="p p-Indicator">}:</span>
   <span class=nt>default</span><span class=p>:</span>
+    <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
     <span class=nt>value</span><span class=p>:</span> 
       <span class="p p-Indicator">{</span><span class=nv>key1</span><span class="p p-Indicator">}:</span> <span class="p p-Indicator">{</span><span class=nv>value1</span><span class="p p-Indicator">}</span><span class=err>,</span>
       <span class="p p-Indicator">{</span><span class=nv>key2</span><span class="p p-Indicator">}:</span> <span class="p p-Indicator">{</span><span class=nv>value2</span><span class="p p-Indicator">}</span><span class=err>,</span>
       <span class="l l-Scalar l-Scalar-Plain">...</span>
-    <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description:</p> <ul> <li><code>required</code>: is the parameter mandatory for submitting a Job.</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</li> </ul> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>environment</span><span class=p>:</span>
+</code></pre></div> <p>Description:</p> <ul> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter.</li> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> </ul> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>environment</span><span class=p>:</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span>
       <span class=nt>LEARNING_RATE</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">0.1</span>
       <span class=nt>EPOCHS</span><span class=p>:</span>
         <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
         <span class=nt>value</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">100</span>
-</code></pre></div> <p>Two environment variables are sent to the container: LEARNING_RATE</p> <p>BIN: with a default value /usr/local/bin, which the researcher can override. </p> <p>HOME: with a default /home, which the user cannot override. </p> <h3 id=special-array-of-pvcs>Special: Array of PVCs<a class=headerlink href=#special-array-of-pvcs title="Permanent link">&para;</a></h3> <p>An array of Persistent Volume Claims (PVC) provides a way to provide a default for attaching multiple PVCs to a container. The syntax is: </p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
+</code></pre></div> <p>Two environment variables are sent to the container: LEARNING_RATE</p> <ul> <li>LEARNING_RATE: with a default value of 0.1, which the Researcher can override. </li> <li>EPOCHS: with a default of 100, which the Researcher <strong>cannot</strong> override. </li> </ul> <h3 id=special-array-of-pvcs>Special: Array of PVCs<a class=headerlink href=#special-array-of-pvcs title="Permanent link">&para;</a></h3> <p>An array of Persistent Volume Claims (PVC) provides a way to provide a default for attaching multiple PVCs to a container. The syntax is: </p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span> 
       <span class="p p-Indicator">{</span><span class=nv>pvc-id1</span><span class="p p-Indicator">}:</span>
@@ -120,7 +119,7 @@
         <span class=nt>path</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>path</span><span class="p p-Indicator">}</span>
         <span class=nt>readOnly</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description: ???? XXX No required? * <code>default.value</code>: if provided, serves as the default key-value set for this parameter. * <code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter.</p> <p>Example:</p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
+</code></pre></div> <p>Description: * <code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true * <code>default.value</code>: if provided, serves as the default key-value set for this parameter.</p> <p>Example:</p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
     <span class=nt>value</span><span class=p>:</span>
@@ -133,6 +132,7 @@
         <span class="l l-Scalar l-Scalar-Plain">....</span>
 </code></pre></div> <h3 id=special-array-of-port-maps>Special: Array of Port Maps<a class=headerlink href=#special-array-of-port-maps title="Permanent link">&para;</a></h3> <p>An array of port maps. The syntax is:</p> <div class=highlight><pre><span></span><code><span class=nt>ports</span><span class=p>:</span>
   <span class=nt>default</span><span class=p>:</span>
+    <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
     <span class=nt>value</span><span class=p>:</span> 
       <span class="p p-Indicator">{</span><span class=nv>port-map-id1</span><span class="p p-Indicator">}:</span>
         <span class=nt>container</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>containerPort</span><span class="p p-Indicator">}</span>
@@ -142,8 +142,7 @@
         <span class=nt>container</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>containerPort</span><span class="p p-Indicator">}</span>
         <span class=nt>external</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>hostPort</span><span class="p p-Indicator">}</span>
         <span class=nt>autoGenerate</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>        
-    <span class=nt>editable</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>
-</code></pre></div> <p>Description: ???? No required? * <code>default.value</code>: if provided, serves as the default key-value set for this parameter. XXX * <code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter. XXX</p> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>ports</span><span class=p>:</span>
+</code></pre></div> <p>Description: </p> <ul> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter. </li> </ul> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>ports</span><span class=p>:</span>
   <span class=nt>port1</span><span class=p>:</span>
     <span class=nt>container</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">8443</span>
     <span class=nt>external</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">443</span>
