@@ -100,9 +100,9 @@
   <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span>
-      <span class=nt>LEARNING_RATE</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">0.1</span>
-      <span class=nt>EPOCHS</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">100</span>
-</code></pre></div> <p>Two environment variables are sent to the container: LEARNING_RATE</p> <ul> <li>LEARNING_RATE: with a default value of 0.1, which the Researcher can override. </li> <li>EPOCHS: with a default of 100, which the Researcher <strong>cannot</strong> override. </li> </ul> <h3 id=special-array-of-pvcs>Special: Array of PVCs<a class=headerlink href=#special-array-of-pvcs title="Permanent link">&para;</a></h3> <p>An array of Persistent Volume Claims (PVC) provides a way to provide a default for attaching multiple PVCs to a container. The syntax is: </p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
+      <span class=nt>LEARNING_RATE</span><span class=p>:</span> <span class=s>&quot;0.1&quot;</span>
+      <span class=nt>EPOCHS</span><span class=p>:</span> <span class=s>&quot;100&quot;</span>
+</code></pre></div> <p>Note that environment variables are strings, so they must be surrounded by quotes. </p> <h3 id=special-array-of-pvcs>Special: Array of PVCs<a class=headerlink href=#special-array-of-pvcs title="Permanent link">&para;</a></h3> <p>An array of Persistent Volume Claims (PVC) provides a way to provide a default for attaching multiple PVCs to a container. The syntax is: </p> <div class=highlight><pre><span></span><code><span class=nt>pvc</span><span class=p>:</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span> 
       <span class="p p-Indicator">{</span><span class=nv>pvc-id1</span><span class="p p-Indicator">}:</span>
@@ -139,7 +139,7 @@
         <span class=nt>container</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>containerPort</span><span class="p p-Indicator">}</span>
         <span class=nt>external</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>hostPort</span><span class="p p-Indicator">}</span>
         <span class=nt>autoGenerate</span><span class=p>:</span> <span class="p p-Indicator">{</span><span class=nv>true|false</span><span class="p p-Indicator">}</span>        
-</code></pre></div> <p>Description: </p> <ul> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter. </li> </ul> <div class="admonition note"> <p class=admonition-title>Note</p> <p>Ports will not be set without the settings the <code>serviceType</code>s flag as well. </p> </div> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>serviceType</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">nodeport</span>
+</code></pre></div> <p>Description: </p> <ul> <li><code>default.editable</code>: if <code>true</code>, the Researcher is allowed to modify the value of this parameter and add new values. Default is true</li> <li><code>default.value</code>: if provided, serves as the default key-value set for this parameter. </li> </ul> <div class="admonition note"> <p class=admonition-title>Note</p> <p>Ports will not be set without the settings of the <code>serviceType</code> flag as well. </p> </div> <p>Example: </p> <div class=highlight><pre><span></span><code><span class=nt>serviceType</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">nodeport</span>
 <span class=nt>ports</span><span class=p>:</span>
   <span class=nt>port1</span><span class=p>:</span>
     <span class=nt>container</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">8443</span>
