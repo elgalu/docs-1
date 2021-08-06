@@ -20,6 +20,10 @@
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/installation-types/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://docs.run.ai/Administrator/Cluster-Setup/cluster-setup-intro/</loc>
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
@@ -96,6 +100,70 @@
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/overview/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/prerequisites/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/preparations/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/backend/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/cluster/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/project-management/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/researcher-authentication/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/ldap-integration/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/upgrade/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/k8s/uninstall/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/prerequisites/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/preparations/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/ocp-dependencies/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/backend/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/cluster/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/runai-setup/self-hosted/ocp/project-management/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://docs.run.ai/Administrator/Researcher-Setup/researcher-setup-intro/</loc>
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
@@ -132,78 +200,6 @@
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/installation-types/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/overview/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/prerequisites/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/preparations/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/backend/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/cluster/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/project-management/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/researcher-authentication/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/ldap-integration/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/upgrade/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/k8s/uninstall/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/overview/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/prerequisites/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/preparations/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/ocp-dependencies/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/backend/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/cluster/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/Administrator/advanced-setup/ocp/project-management/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/Administrator/admin-ui-setup/admin-ui-users/</loc>
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
@@ -220,10 +216,6 @@
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/Administrator/presentations/administrator-onboarding-presentation/</loc>
-     <lastmod>2021-08-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/Administrator/integration/jupyterhub/</loc>
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
@@ -237,6 +229,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/Administrator/integration/kubeflow/</loc>
+     <lastmod>2021-08-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/Administrator/presentations/administrator-onboarding-presentation/</loc>
      <lastmod>2021-08-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
