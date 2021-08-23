@@ -68,10 +68,6 @@
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/ldap-integration/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/access-roles/</loc>
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
@@ -125,10 +121,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/self-hosted/k8s/researcher-authentication/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/self-hosted/k8s/ldap-integration/</loc>
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
