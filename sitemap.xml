@@ -60,39 +60,11 @@
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/allow-external-access-to-containers/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/researcher-authentication/</loc>
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/access-roles/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/nvidia/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/non-root-containers/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/node-downtime/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/node-roles/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/cli-admin-install/</loc>
-     <lastmod>2021-08-23</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/kubernetes-config-best-practices/</loc>
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -153,6 +125,34 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/self-hosted/ocp/project-management/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/allow-external-access-to-containers/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/access-roles/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/non-root-containers/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/node-downtime/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/node-roles/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/cli-admin-install/</loc>
+     <lastmod>2021-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/kubernetes-config-best-practices/</loc>
      <lastmod>2021-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
