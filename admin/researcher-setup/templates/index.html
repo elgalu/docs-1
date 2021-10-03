@@ -172,7 +172,7 @@
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span>
       <span class=nt>MYUSER</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">$USER</span>
-</code></pre></div> The container created will have an environment variable called <code>MYUSER</code> with the value of the linux <code>$USER</code> variable in the running host machine. </p> <h3 id=using-secrets-in-templates>Using Secrets in Templates<a class=headerlink href=#using-secrets-in-templates title="Permanent link">&para;</a></h3> <p>It is possible to add values from Kuberenetes secret to administrative templates. The secret will be extracted when the Job is created. For example: </p> <div class=highlight><pre><span></span><code><span class=nt>environment</span><span class=p>:</span>
+</code></pre></div> The container created will have an environment variable called <code>MYUSER</code> with the value of the linux <code>$USER</code> variable as defined in the running host machine. </p> <h3 id=using-secrets-in-templates>Using Secrets in Templates<a class=headerlink href=#using-secrets-in-templates title="Permanent link">&para;</a></h3> <p>It is possible to add values from Kuberenetes secrets to administrative templates. The secret will be extracted from the secret object when the Job is created. For example: </p> <div class=highlight><pre><span></span><code><span class=nt>environment</span><span class=p>:</span>
   <span class=nt>editable</span><span class=p>:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
   <span class=nt>default</span><span class=p>:</span>
     <span class=nt>value</span><span class=p>:</span>
