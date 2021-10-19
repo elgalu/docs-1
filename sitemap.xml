@@ -148,11 +148,31 @@
      <lastmod>2021-10-19</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/advanced/allow-external-access-to-containers/</loc>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/overview/</loc>
+     <lastmod>2021-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/cli-admin-install/</loc>
+     <lastmod>2021-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/node-roles/</loc>
+     <lastmod>2021-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/researcher-authentication/</loc>
+     <lastmod>2021-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/sso/</loc>
      <lastmod>2021-10-19</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/advanced/access-roles/</loc>
+     <lastmod>2021-10-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.run.ai/admin/runai-setup/advanced/allow-external-access-to-containers/</loc>
      <lastmod>2021-10-19</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -161,14 +181,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/advanced/node-downtime/</loc>
-     <lastmod>2021-10-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/advanced/node-roles/</loc>
-     <lastmod>2021-10-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/advanced/cli-admin-install/</loc>
      <lastmod>2021-10-19</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
