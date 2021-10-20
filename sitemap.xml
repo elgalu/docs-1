@@ -64,10 +64,6 @@
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/researcher-authentication/</loc>
-     <lastmod>2021-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/cluster-setup/nvidia/</loc>
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
@@ -97,10 +93,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.run.ai/admin/runai-setup/self-hosted/k8s/project-management/</loc>
-     <lastmod>2021-10-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.run.ai/admin/runai-setup/self-hosted/k8s/researcher-authentication/</loc>
      <lastmod>2021-10-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
